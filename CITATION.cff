@@ -45,7 +45,8 @@ keywords:
   - post-Newtonian
   - Müller Maguire
 repository-code: "https://github.com/oxunjonuz/aiodam-time-flow-research"
-url: "https://github.com/oxunjonuz/aiodam-time-flow-research"
+url: "https://doi.org/10.5281/zenodo.23031220"
+doi: "10.5281/zenodo.23031220"
 references:
   - type: article
     title: "Now, and the Flow of Time"

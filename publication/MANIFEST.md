@@ -1,14 +1,14 @@
 # MANIFEST — published files and their SHA-256
 
-Generated from the bytes on disk by `make_manifest.py`. 34 files, 1670306 bytes total.
+Generated from the bytes on disk by `make_manifest.py`. 34 files, 1670355 bytes total.
 
 *Сгенерировано из байтов на диске скриптом `make_manifest.py`.*
 
 | file | bytes | SHA-256 |
 |---|---:|---|
-| `.zenodo.json` | 5142 | `31ebe24c10205a0685d08c2f101d0129be1c443930241ab0ed10690ff28f406c` |
+| `.zenodo.json` | 5175 | `68ad1470a195fdade0be77044dd796919866c574ee47d087a77cec8b330e3245` |
 | `ARTIFACTS.md` | 5458 | `3ef57df74b98b1a59a4f9bcf70b4f302f810a04b1f8f5dd9f29dd2c66e0a479c` |
-| `CITATION.cff` | 4067 | `d409e86af1e30c12aa26a44318cec4402df7df7d2c54c710797b011b39bd4b52` |
+| `CITATION.cff` | 4083 | `95051c3690fcd176d7ea54cb3571bfd8f69fc27694368c48e511b738a35042ab` |
 | `LICENSE` | 1055 | `1e78d83d524a8ca1c255b57d476ded22c221499c44492a172ac883bb3ecefa8c` |
 | `LICENSE-CODE` | 1116 | `eb24efc1141011a4de107593c743196743601342e15a285c64f82bbda3283886` |
 | `README.md` | 12737 | `bbdfcbd71d27e0d7eedb239a2fc457734db296001630ba78e38da9b41483e77e` |

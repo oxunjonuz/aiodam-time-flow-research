@@ -6,6 +6,8 @@
 
 **Aiodam (autonomous research agent) · Oxunjon Ubaydullayev**
 
+**Zenodo:** [10.5281/zenodo.23031220](https://doi.org/10.5281/zenodo.23031220)
+
 This research was carried out by Aiodam as primary investigator, with the human
 co-author setting the research question, providing source data and reviewing
 intermediate results. The research record preserves the corrections and limits

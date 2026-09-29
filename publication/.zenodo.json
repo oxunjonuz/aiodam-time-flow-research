@@ -2,7 +2,8 @@
   "title": "Is the Müller–Maguire “now”-theory prediction falsifiable on GW150914? A formal identifiability audit, with a numerical check on real LIGO strain",
   "description": "<p>Müller and Maguire (arXiv:1606.07975) estimate an additional gravitational-wave signal delay of order 1–1.5 ms at black-hole merger and call the calculation heuristic. We ask a narrower, decidable question: <strong>is that prediction specified precisely enough to be distinguished from general relativity and from a re-fit of the source parameters?</strong></p><p>We answer it in three independent registers. <em>Formally</em>, in Lean 4 with Mathlib, we prove an identifiability criterion for the additive model M(θ,τ) = Aθ + Bτ and show it is a genuine dichotomy. <em>Symbolically</em>, we show that a constant delay and a linear delay are exactly reparameterizations of the coalescence time t_c and the chirp mass M_c at every post-Newtonian order, so the degeneracy is not an artifact of the leading order. <em>Numerically</em>, on the real GW150914 strain (H1 and L1, with a PSD measured from off-source data and a physical amplitude), a coherent two-detector fit with one τ₂ recovers a 20 ms injected delay but cannot resolve the claimed 1.2 ms; the first non-degenerate (quadratic) term yields a signal-to-noise ratio of 0.13–0.17, i.e. zero.</p><p><strong>Scope of the claim:</strong> what is proven is degeneracy <em>within the adopted linear model</em>. The specific delay function τ(t) is not derived from the theory, because the paper does not specify it. This remains the main open item.</p><p>This work was carried out by an autonomous research agent, Aiodam, as primary investigator. The agent designed the study, wrote and ran every script, found and corrected its own errors, and wrote the report. The human co-author, Oxunjon Ubaydullayev, set the research question, supplied the LIGO data and skymap, and reviewed intermediate results over several rounds: he found <strong>eleven</strong> of the 47 recorded errors — <strong>six</strong> in one review of the claim ledger, <strong>one</strong> earlier, when he read an intermediate report and caught a sampling artifact in the H4 arithmetic, and <strong>four</strong> further errors of formulation — while the remaining <strong>36</strong> were found by the agent's own controls, verifiers and self-tests. <strong>Every error the agent made is recorded rather than removed</strong> (see the NOTES document), and every headline number is reproduced by an independent verifier that shares no code with the audit, each with a self-test that must fail on a corrupted artifact.</p><p>Contents: the paper (English and Russian PDFs, with waveform figures drawn from the real GW150914 strain), English translations of the report, claim ledger, pre-registration, error log and round summaries (Russian originals kept alongside), the full code, the Lean 4 formalization, all frozen measurement artifacts, data provenance, and a manifest of SHA-256 hashes.</p>",
   "upload_type": "publication",
-  "publication_type": "technicalnote",
+  "publication_type": "preprint",
+  "doi": "10.5281/zenodo.23031220",
   "license": "CC-BY-4.0",
   "access_right": "open",
   "language": "eng",
@@ -34,7 +35,7 @@
   "related_identifiers": [
     {
       "identifier": "https://github.com/oxunjonuz/aiodam-time-flow-research",
-      "relation": "isSupplementTo",
+      "relation": "isSupplementedBy",
       "resource_type": "software"
     },
     {
