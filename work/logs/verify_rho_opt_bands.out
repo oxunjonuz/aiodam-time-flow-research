@@ -1,0 +1,23 @@
+  [OK ] H1: f_ISCO SI route vs recorded -- 67.630422 vs 67.630422
+  [OK ] H1: B_full_20_300 discrete sum CONVERGES as df->0 -- edge=300.0000; df=0.25: rel=8.41e-04; df=0.0625: rel=2.78e-05; df=0.015625: rel=2.85e-06
+  [OK ] H1: B_isco_20_67.63 discrete sum CONVERGES as df->0 -- edge=67.5000; df=0.25: rel=2.00e-03; df=0.0625: rel=7.23e-05; df=0.015625: rel=1.41e-05
+  [OK ] H1: B_full_20_300 independent discrete sum == recorded -- 37.311842 vs 37.311842 rel=0.00e+00
+  [OK ] H1: B_full_20_300 continuous within 3e-3 of discrete -- cont=37.2805 disc=37.3118 rel=8.40e-04
+  [OK ] H1: B_isco_20_67.63 independent discrete sum == recorded -- 20.709826 vs 20.709826 rel=0.00e+00
+  [OK ] H1: B_isco_20_67.63 continuous within 3e-3 of discrete -- cont=20.6688 disc=20.7098 rel=1.98e-03
+  [OK ] H1: B_imr_20_250 independent discrete sum == recorded -- 36.584970 vs 36.584970 rel=0.00e+00
+  [OK ] H1: B_imr_20_250 continuous within 3e-3 of discrete -- cont=36.5535 disc=36.5850 rel=8.61e-04
+  [OK ] H1: ISCO cut moves scale by 1.5-2.5x -- 0.1948 -> 0.3385 ratio=1.737
+  [OK ] H1: scale == peak/rho_opt -- 0.194842 vs 0.194842
+  [OK ] L1: f_ISCO SI route vs recorded -- 67.630422 vs 67.630422
+  [OK ] L1: B_full_20_300 discrete sum CONVERGES as df->0 -- edge=300.0000; df=0.25: rel=5.26e-04; df=0.0625: rel=1.72e-05; df=0.015625: rel=1.73e-06
+  [OK ] L1: B_isco_20_67.63 discrete sum CONVERGES as df->0 -- edge=67.5000; df=0.25: rel=8.67e-04; df=0.0625: rel=3.22e-05; df=0.015625: rel=6.89e-06
+  [OK ] L1: B_full_20_300 independent discrete sum == recorded -- 33.709714 vs 33.709714 rel=0.00e+00
+  [OK ] L1: B_full_20_300 continuous within 3e-3 of discrete -- cont=33.6920 disc=33.7097 rel=5.25e-04
+  [OK ] L1: B_isco_20_67.63 independent discrete sum == recorded -- 18.170671 vs 18.170671 rel=0.00e+00
+  [OK ] L1: B_isco_20_67.63 continuous within 3e-3 of discrete -- cont=18.1550 disc=18.1707 rel=8.63e-04
+  [OK ] L1: B_imr_20_250 independent discrete sum == recorded -- 32.874735 vs 32.874735 rel=0.00e+00
+  [OK ] L1: B_imr_20_250 continuous within 3e-3 of discrete -- cont=32.8570 disc=32.8747 rel=5.38e-04
+  [OK ] L1: ISCO cut moves scale by 1.5-2.5x -- 0.1657 -> 0.2909 ratio=1.755
+  [OK ] L1: scale == peak/rho_opt -- 0.165739 vs 0.165739
+VERIFY_CONFIRMED (0 bad)

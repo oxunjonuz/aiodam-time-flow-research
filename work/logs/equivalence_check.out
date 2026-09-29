@@ -1,0 +1,29 @@
+baseline exit=0, artifact=yes
+
+  [EQUIVALENT-ON-HEADLINE] M3 wrong chirp-mass derivative factor (5/3 -> 3/5)
+      headline claims identical; 10 diagnostic + 4 other leaf/leaves differ
+        diagnostic .H1.fisher_cond: rel 9.35e-01
+        diagnostic .H1.fisher_singular_values[0]: rel 8.70e-01
+        diagnostic .H1.fisher_singular_values[1]: rel 8.36e-05
+        diagnostic .H1.fisher_singular_values[3]: rel 5.00e-01
+  [EQUIVALENT-ON-HEADLINE] M6 wrong chirp phase coefficient (3/128 -> 3/64)
+      headline claims identical; 9 diagnostic + 4 other leaf/leaves differ
+        diagnostic .H1.fisher_cond: rel 7.50e-01
+        diagnostic .H1.fisher_singular_values[0]: rel 7.50e-01
+        diagnostic .H1.fisher_singular_values[1]: rel 9.32e-06
+        diagnostic .H2.fisher_cond: rel 9.62e-01
+  [EQUIVALENT-ON-HEADLINE] M16 wrong luminosity distance (410 -> 41)
+      headline claims identical; 5 diagnostic + 3 other leaf/leaves differ
+        diagnostic .H1.fisher_cond: rel 1.00e+00
+        diagnostic .H1.fisher_singular_values[3]: rel 1.00e+00
+        diagnostic .H2.fisher_cond: rel 7.07e-01
+        diagnostic .H2.fisher_singular_values[3]: rel 7.07e-01
+  [EQUIVALENT-ON-HEADLINE] M19 sign flip in the delay direction
+      headline claims identical; 0 diagnostic + 0 other leaf/leaves differ
+
+summary: {
+  "M3 wrong chirp-mass derivative factor (5/3 -> 3/5)": "equivalent_on_headline_claims",
+  "M6 wrong chirp phase coefficient (3/128 -> 3/64)": "equivalent_on_headline_claims",
+  "M16 wrong luminosity distance (410 -> 41)": "equivalent_on_headline_claims",
+  "M19 sign flip in the delay direction": "equivalent_on_headline_claims"
+}

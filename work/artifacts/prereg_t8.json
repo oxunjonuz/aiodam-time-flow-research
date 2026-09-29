@@ -1,0 +1,35 @@
+{
+  "notes": {
+    "reconciliation": "The frozen T8 is a false-alarm-rate calibration of the detector; the Fisher condition number is a different, post-hoc quantity. In the original analysis.py the name T8 was attached to the Fisher number, so the report cited a frozen threshold whose implementation never existed. Both are computed here: the preregistered T8 passes with 0/100 false alarms against the injected quadratic residual of 0.0872, and the post-hoc T8b is reported separately."
+  },
+  "posthoc_T8b": {
+    "added_after_the_freeze": true,
+    "definition": "Fisher information condition number > 1e12",
+    "delay_column_bit_identical_to_tc_column": true,
+    "fisher_cond_3col_basis": 168926074042.41672,
+    "fisher_cond_4col_basis_as_in_analysis_py": 321913906261.3354,
+    "fisher_cond_4col_with_duplicate_column": 3.0954642605431056e+20,
+    "note": "post-hoc, NOT a preregistered threshold; must not be cited as one. The delay column h*2*pi*f is bit-identical to the t_c column, so the 4-column Fisher matrix is EXACTLY rank-deficient and its condition number is roundoff-dominated: this script gets 3.095e+20 where analysis.py reported 1.813e20. The two differ because a roundoff-floor value is not reproducible -- which is exactly why it must be reported as a restatement of the exact degeneracy, never as an independent measurement.",
+    "passes": false
+  },
+  "prereg_T8": {
+    "definition_frozen": "false-alarm rate on pure noise (100 realisations) <= 5%",
+    "detection_threshold": 5.0,
+    "false_alarm_rate": 0.0,
+    "n_false_alarms": 0,
+    "n_realisations": 100,
+    "noise_z_max_abs": 2.1300154527495927,
+    "noise_z_mean": 0.048924873453732386,
+    "noise_z_std": 0.9332000011760815,
+    "passes": true,
+    "power_statement": "T8 passes, but it is a statement about the DETECTOR, not the effect: pure noise never reaches z = 5.0, while the paper's 1.2 ms delay produces z = 0.0872, i.e. 57.3x below the same threshold. T8 alone would be satisfied by a detector that can never see the signal; it is reported together with the signal's z for that reason.",
+    "signal_z": 0.08723243480996298,
+    "signal_z_definition_check_matches_residual_snr": true,
+    "statistic": "z = <whitened data, unit non-absorbed delay direction>; z ~ N(0,1) under pure noise",
+    "threshold_rate": 0.05
+  },
+  "thresholds": {
+    "false_alarm_rate_below_5pct": true,
+    "prereg_T8_passes": true
+  }
+}

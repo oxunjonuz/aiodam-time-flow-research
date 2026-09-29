@@ -1,0 +1,70 @@
+{
+  "answer": "Grid item closed BOTH ways.  (A) Expanded to +-38.4 ms -- four times the recorded +-9.6 ms, 129 points.  The profile STILL never drops by 1 sigma, so the honest statement is not 'unconstrained on a +-9.6 ms grid' but 'unconstrained over the whole scanned range', and the reason is the degeneracy already proved, not the grid width.  ONE MORE THING, and it must be said rather than left in the artifact: on H1 the profile maximum sits AT the grid edge (-38.4 ms), i.e. the profile is still RISING when the scan stops.  That is not a best fit and not a bound -- it means the data weakly prefer a larger |tau2| and there is no interior maximum at all, which is the strongest form of 'unconstrained'.  (B) The physics bound is the more useful half, and it lands somewhere the grid never would: a quadratic delay must sweep less than pi of phase across the band, which caps the amplitude at 1.667 ms -- and the paper's claimed 1.2 ms uses 72% of that budget.  So the paper's number is not merely unconstrained by the data; it is close to the edge of what can be called a small perturbation of the template at all.  Both bounds are reported so the reader can see which one actually limits the claim.",
+  "controls": {
+    "NC1_coarse_peak_at_zero_matches_recorded_profile": true,
+    "NC2_profile_at_zero_equals_coarse_peak": true,
+    "NC3_phase_ceiling_tighter_than_segment_ceiling": true
+  },
+  "grid": {
+    "amplitude_span_ms": 76.8,
+    "half_span_ms": 38.4,
+    "n": 129
+  },
+  "per_detector": {
+    "H1": {
+      "NC1_coarse_peak_at_zero_matches_recorded_profile": true,
+      "best_fit_is_at_grid_edge": true,
+      "coarse_peak_at_zero": 7.273249726912924,
+      "one_sigma_high_ms": null,
+      "one_sigma_low_ms": null,
+      "profile_at_high_edge": 7.308579922905267,
+      "profile_at_low_edge": 7.810615613982226,
+      "profile_at_paper": 7.261371030905542,
+      "profile_at_zero": 7.273249726912924,
+      "profile_drop_within_grid": 0.7912670337031855,
+      "profile_half_span_used_ms": 38.4,
+      "profile_peak_snr": 7.810615613982226,
+      "recorded_profile_at_zero": 7.273249726912924,
+      "tau2_best_fit_amplitude_ms": -38.4,
+      "unconstrained_over_expanded_grid": true
+    },
+    "L1": {
+      "NC1_coarse_peak_at_zero_matches_recorded_profile": true,
+      "best_fit_is_at_grid_edge": false,
+      "coarse_peak_at_zero": 5.577882654444806,
+      "one_sigma_high_ms": null,
+      "one_sigma_low_ms": null,
+      "profile_at_high_edge": 5.252949333316995,
+      "profile_at_low_edge": 5.12446568688156,
+      "profile_at_paper": 5.57949423327598,
+      "profile_at_zero": 5.577882654444806,
+      "profile_drop_within_grid": 0.46104942601871723,
+      "profile_half_span_used_ms": 38.4,
+      "profile_peak_snr": 5.57949423327598,
+      "recorded_profile_at_zero": 5.577882654444806,
+      "tau2_best_fit_amplitude_ms": 1.2,
+      "unconstrained_over_expanded_grid": true
+    }
+  },
+  "physical_bounds": {
+    "paper_amplitude_ms": 1.2,
+    "phase_sweep_ceiling": {
+      "amplitude_ms": 1.6666666666666665,
+      "criterion": "max |2 pi f tau2 (t(f)-t_ref)^2| <= pi over the band",
+      "tau2_per_s2": 0.0023370481047502775
+    },
+    "segment_duration_ceiling": {
+      "amplitude_ms": 4000.0,
+      "criterion": "max |tau2 (t(f)-t_ref)^2| <= 4 s (segment length)",
+      "tau2_per_s2": 5.608915451400666
+    },
+    "t_span_s": 0.8444822952069388
+  },
+  "thresholds": {
+    "NC1_coarse_peak_at_zero_matches_recorded_profile": true,
+    "NC2_profile_at_zero_equals_coarse_peak": true,
+    "NC3_phase_ceiling_tighter_than_segment_ceiling": true,
+    "T_paper_amplitude_inside_physical_bound": true,
+    "T_still_unconstrained_on_4x_grid": true
+  }
+}

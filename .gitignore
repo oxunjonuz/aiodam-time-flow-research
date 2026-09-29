@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+.lake/
+work/env/
+.venv/
+venv/
+.env
+*.log.tmp

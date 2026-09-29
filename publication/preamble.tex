@@ -1,0 +1,226 @@
+% ---------------------------------------------------------------------------
+% preamble.tex — typography for the paper PDFs.
+%
+% Chosen for a text-heavy scientific paper with Cyrillic in the Russian edition:
+%   * main font  P052 (URW Palladio / Palatino clone) — a book face with real
+%     Cyrillic coverage, which DejaVu Serif (the previous build) has but which
+%     looks like a screen font in print;
+%   * the nine glyphs P052 does not carry are mapped explicitly (see below) —
+%     measured with fontTools, not guessed: the missing set is
+%     U+207B ⁻, U+2080 ₀, U+2081 ₁, U+2082 ₂, U+208A ₊, U+209B ₛ, U+0307 ̇,
+%     U+27F9 ⟹, U+2293 ⊓.
+% ---------------------------------------------------------------------------
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+% --- fonts -----------------------------------------------------------------
+\setmainfont{P052}[
+  Extension      = .otf,
+  UprightFont    = *-Roman,
+  BoldFont       = *-Bold,
+  ItalicFont     = *-Italic,
+  BoldItalicFont = *-BoldItalic,
+  Numbers        = OldStyle
+]
+\setsansfont{TeX Gyre Heros}
+\setmonofont{DejaVu Sans Mono}[Scale=0.86]
+\setmathfont{Latin Modern Math}
+
+% --- the glyphs the main font lacks ---------------------------------------
+% Measured with fontTools, not guessed: P052 is missing exactly
+%   U+207B ⁻, U+2080 ₀, U+2081 ₁, U+2082 ₂, U+208A ₊, U+209B ₛ, U+27F9 ⟹, U+2293 ⊓
+% (and U+0307, handled in the build script).
+%
+% These are mapped to a FALLBACK FONT THAT HAS THEM (DejaVu Serif) rather than to
+% a LaTeX construction like \textsuperscript{\textminus}. The difference matters:
+% with the construction the PDF renders correctly but the TEXT LAYER loses the
+% character — copy-paste, search and text extraction all degrade, and a reader
+% searching for "10⁻²³" would not find it. With the fallback font the actual
+% Unicode character survives into the PDF, which is what verify_pdfs.py checks.
+\usepackage{newunicodechar}
+\newfontfamily\glyphfallback{DejaVu Serif}
+\newunicodechar{⁻}{{\glyphfallback ⁻}}
+\newunicodechar{⁺}{{\glyphfallback ⁺}}
+\newunicodechar{⁰}{{\glyphfallback ⁰}}
+\newunicodechar{¹}{{\glyphfallback ¹}}
+\newunicodechar{²}{{\glyphfallback ²}}
+\newunicodechar{³}{{\glyphfallback ³}}
+\newunicodechar{⁴}{{\glyphfallback ⁴}}
+\newunicodechar{⁵}{{\glyphfallback ⁵}}
+\newunicodechar{⁶}{{\glyphfallback ⁶}}
+\newunicodechar{⁷}{{\glyphfallback ⁷}}
+\newunicodechar{⁸}{{\glyphfallback ⁸}}
+\newunicodechar{⁹}{{\glyphfallback ⁹}}
+\newunicodechar{₀}{{\glyphfallback ₀}}
+\newunicodechar{₁}{{\glyphfallback ₁}}
+\newunicodechar{₂}{{\glyphfallback ₂}}
+\newunicodechar{₃}{{\glyphfallback ₃}}
+\newunicodechar{₄}{{\glyphfallback ₄}}
+\newunicodechar{₊}{{\glyphfallback ₊}}
+\newunicodechar{ₛ}{{\glyphfallback ₛ}}
+\newunicodechar{⟹}{{\glyphfallback ⟹}}
+\newunicodechar{⊓}{{\glyphfallback ⊓}}
+\newunicodechar{⊔}{{\glyphfallback ⊔}}
+
+% The combining dot above (U+0307) cannot be redefined by \newunicodechar on its
+% own — it is a combining mark and must stay in the SAME font as the base letter
+% to compose. So the build script maps the pair "tau + U+0307" to \tauDot, which
+% sets BOTH characters in the fallback font: they compose correctly, and the text
+% layer keeps U+03C4 U+0307 (checked by verify_pdfs.py).
+\newcommand{\tauDot}{{\glyphfallback τ̇}}
+
+% --- page and text ---------------------------------------------------------
+\usepackage[a4paper, margin=2.4cm, top=2.6cm, bottom=2.4cm]{geometry}
+% NOTE: pandoc's default template already loads microtype, so it is NOT loaded
+% here — a second \usepackage with different options is an "Option clash" error.
+% Protrusion is disabled through pandoc's own -V microtypeoptions instead (see
+% build_paper.sh): microtype's character protrusion lets a glyph extend ~2pt into
+% the margin, which is standard typography and invisible — but it makes "is every
+% word inside the text block?" unanswerable, and the owner asked exactly that
+% question. Expansion and kerning are kept; only protrusion is off, so the frame
+% check in verify_pdfs.py is exact rather than tolerance-based.
+\usepackage{setspace}
+\setstretch{1.06}
+\usepackage{parskip}
+\setlength{\parskip}{0.55em}
+\usepackage{ragged2e}
+
+% --- nothing may leave the text block --------------------------------------
+% The owner found a formula running past the right margin. TeX's default
+% tolerance prefers an overfull box to a loose line; that is the wrong trade for
+% a paper, so the tolerance is raised and an emergency stretch is allowed.
+\usepackage{seqsplit}   % lets a long unbreakable token be split with \seqsplit
+\usepackage{xurl}       % lets a long URL break at any character
+\Urlmuskip=0mu plus 1mu
+\setlength{\emergencystretch}{3em}
+\tolerance=3000
+\hbadness=10000
+\vbadness=10000
+\sloppy
+% long technical words that must be allowed to break
+\hyphenation{Schwarz-schild-me-tric Schwarz-schild iden-ti-fi-a-bil-ity
+             iden-ti-fi-able IMR-Phe-nom-T Math-lib}
+
+% --- headings --------------------------------------------------------------
+\usepackage{titlesec}
+\usepackage{xcolor}
+\definecolor{inkblue}{HTML}{1B3A6B}
+\definecolor{inkred}{HTML}{A8322D}
+\definecolor{inkgold}{HTML}{8A6D1F}
+\definecolor{rulegrey}{HTML}{B9BFC9}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{inkblue}}{\thesection}{0.7em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{inkblue!85!black}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{inkgold}}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.7em}{0.7em}
+\titlespacing*{\subsection}{0pt}{1.3em}{0.5em}
+\titlespacing*{\subsubsection}{0pt}{1.1em}{0.4em}
+
+% a hairline under section titles
+\newcommand{\sectionrule}{\vspace{-0.35em}{\color{rulegrey}\hrule height 0.4pt}\vspace{0.35em}}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{inkblue}}{\thesection}{0.7em}{}[\sectionrule]
+
+% --- tables ----------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\renewcommand{\arraystretch}{1.18}
+\setlength{\tabcolsep}{5pt}
+
+% --- code ------------------------------------------------------------------
+\usepackage{fancyvrb}
+\definecolor{codebg}{HTML}{F5F6F8}
+\definecolor{codeink}{HTML}{243447}
+
+% --- links -----------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = inkblue,
+  citecolor  = inkblue,
+  urlcolor   = inkblue,
+  filecolor  = inkblue,
+  pdftitle   = {Is the Müller–Maguire "now"-theory prediction falsifiable on GW150914?},
+  pdfauthor  = {Aiodam; Oxunjon Ubaydullayev},
+  pdfsubject = {Formal identifiability audit with a numerical check on real LIGO strain}
+}
+
+% --- headers and footers ---------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\footnotesize\color{inkblue}\itshape Identifiability of the “now”-theory delay on GW150914}
+\fancyhead[R]{\footnotesize\color{inkblue}\thepage}
+\fancyfoot[C]{\footnotesize\color{inkgold} Aiodam \& O. Ubaydullayev — 2026}
+
+% --- title block -----------------------------------------------------------
+% NOTE: \preauthor / \postauthor are deliberately NOT redefined. titling's
+% default wraps the author list in a tabular (which is how \and is rendered);
+% replacing it with a plain \begin{center} breaks \maketitle with
+% "! Misplaced \crcr." — measured, not guessed.
+\usepackage{titling}
+\pretitle{\begin{center}\vspace{-1.2em}\color{inkblue}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.2em}}
+\predate{\begin{center}\small\color{inkgold}}
+\postdate{\par\end{center}\vspace{0.6em}}
+
+% --- abstract --------------------------------------------------------------
+\renewenvironment{abstract}{%
+  \begin{center}%
+    \begin{minipage}{0.92\textwidth}%
+      \setstretch{1.0}\small%
+      \noindent{\color{inkblue}\bfseries Abstract}\par\vspace{0.35em}%
+      \hrule height 0.4pt \vspace{0.5em}%
+}{%
+      \vspace{0.5em}\hrule height 0.4pt%
+    \end{minipage}%
+  \end{center}%
+  \vspace{0.8em}%
+}
+
+% --- figures ---------------------------------------------------------------
+\usepackage{graphicx}
+% Figures are placed EXACTLY where the text puts them ([H]). That is not a
+% stylistic choice: with the default deferred placement LaTeX may pile two
+% floats onto one page, and when it cannot fit them it emits an "Overfull \vbox
+% ... has occurred while \output is active" and the second caption is set past
+% the bottom of the page — ink outside the text block, which is exactly what
+% verify_frames.py exists to catch. Measured: with deferred placement the EN
+% paper overflows on two pages (188 px past the block, to the physical edge);
+% with [H] the overflow is zero and the ink stays inside. The trade is that a
+% figure can leave a gap at the bottom of a page; correctness first.
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{caption}
+\captionsetup{font=small, labelfont={bf,color=inkblue}, labelsep=period,
+              justification=raggedright, singlelinecheck=false}
+\setlength{\abovecaptionskip}{0.55em}
+\setlength{\belowcaptionskip}{0.25em}
+
+% --- lists -----------------------------------------------------------------
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0.35em, itemsep=0.15em, parsep=0.1em, leftmargin=1.3em}
+\setlist[enumerate]{topsep=0.35em, itemsep=0.15em, parsep=0.1em, leftmargin=1.6em}
+
+% --- block quotes (the paper uses them for the formal statements) ----------
+\usepackage{mdframed}
+\renewenvironment{quote}{%
+  \begin{mdframed}[linewidth=0.6pt, linecolor=rulegrey, backgroundcolor=codebg!60,
+                   innertopmargin=0.6em, innerbottommargin=0.6em,
+                   innerleftmargin=0.9em, innerrightmargin=0.9em,
+                   skipabove=0.6em, skipbelow=0.6em]%
+  \small%
+}{%
+  \end{mdframed}%
+}
+
+% --- widow/orphan control --------------------------------------------------
+\widowpenalty=10000
+\clubpenalty=10000

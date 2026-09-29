@@ -1,0 +1,7 @@
+  [OK ] H1: independent IMR rho_opt 31.659513 vs artifact 31.659513  rel=0.00e+00
+  [OK ] L1: independent IMR rho_opt 28.735042 vs artifact 28.735042  rel=0.00e+00
+  [OK ] V3a inclination sweep monotone decreasing
+  [OK ] V3b crossing 59.19340049167065 vs artifact 59.19340049167065
+  [OK ] V3c rho_opt at crossing inclination = 19.9817 (expect ~20)
+
+VERIFY_CONFIRMED (0 bad)

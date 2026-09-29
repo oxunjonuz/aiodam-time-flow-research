@@ -1,0 +1,80 @@
+artifacts dir: /work/time_flow_research_20260927/work/artifacts
+== pn_orders.json ==
+  [OK ] identity f dPsi/df = Mc dPsi/dMc (independent sympy)
+  [OK ] pn0_Mc_tc_phic: const absorbed to 1e-10 -- 6.661e-16
+  [OK ] pn0_Mc_tc_phic: linear absorbed to 1e-10 -- 2.220e-16
+  [OK ] pn7_Mc_eta_tc_phic: const absorbed to 1e-10 -- 9.992e-16
+  [OK ] pn7_Mc_eta_tc_phic: linear absorbed to 1e-10 -- 5.551e-16
+  [OK ] 3.5PN quadratic residual < 1 -- 0.0551
+  [OK ] residual invariant under reference change -- 2.290e-10
+  [OK ] t_span is 0.5-2 s (unit sanity) -- 0.8314
+== projection route (normal equations) ==
+  [OK ] linear delay absorbed (normal equations route) -- 1-abs=-6.661e-16 resid=1.372e-13
+  [OK ] residual matches the artifact order of magnitude -- resid=1.372e-13
+== h4_weight_audit.json ==
+  [OK ] W1 symbolic mean has negligible imaginary part -- Im=0.000e+00
+  [OK ] W1 symbolic mean matches artifact -- symbolic=1.250339 artifact=1.250339
+  [OK ] W2 symbolic mean has negligible imaginary part -- Im=0.000e+00
+  [OK ] W2 symbolic mean matches artifact -- symbolic=1.285956 artifact=1.285956
+  [OK ] W3 symbolic mean has negligible imaginary part -- Im=0.000e+00
+  [OK ] W3 symbolic mean matches artifact -- symbolic=1.241729 artifact=1.241729
+  [OK ] the three weights genuinely disagree -- 0.0442
+  [OK ] only W1 matches the paper's 1.25 to 0.1%
+== et_ce_scaling.json ==
+  [OK ] fixed_peak_amplitude/fmin10_S1: const absorbed
+  [OK ] fixed_peak_amplitude/fmin10_S1: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin10_S10: const absorbed
+  [OK ] fixed_peak_amplitude/fmin10_S10: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin10_S20: const absorbed
+  [OK ] fixed_peak_amplitude/fmin10_S20: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin20_S1: const absorbed
+  [OK ] fixed_peak_amplitude/fmin20_S1: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin20_S10: const absorbed
+  [OK ] fixed_peak_amplitude/fmin20_S10: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin20_S20: const absorbed
+  [OK ] fixed_peak_amplitude/fmin20_S20: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin5_S1: const absorbed
+  [OK ] fixed_peak_amplitude/fmin5_S1: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin5_S10: const absorbed
+  [OK ] fixed_peak_amplitude/fmin5_S10: linear absorbed
+  [OK ] fixed_peak_amplitude/fmin5_S20: const absorbed
+  [OK ] fixed_peak_amplitude/fmin5_S20: linear absorbed
+  [OK ] fixed_tau2/fmin10_S1: const absorbed
+  [OK ] fixed_tau2/fmin10_S1: linear absorbed
+  [OK ] fixed_tau2/fmin10_S10: const absorbed
+  [OK ] fixed_tau2/fmin10_S10: linear absorbed
+  [OK ] fixed_tau2/fmin10_S20: const absorbed
+  [OK ] fixed_tau2/fmin10_S20: linear absorbed
+  [OK ] fixed_tau2/fmin20_S1: const absorbed
+  [OK ] fixed_tau2/fmin20_S1: linear absorbed
+  [OK ] fixed_tau2/fmin20_S10: const absorbed
+  [OK ] fixed_tau2/fmin20_S10: linear absorbed
+  [OK ] fixed_tau2/fmin20_S20: const absorbed
+  [OK ] fixed_tau2/fmin20_S20: linear absorbed
+  [OK ] fixed_tau2/fmin5_S1: const absorbed
+  [OK ] fixed_tau2/fmin5_S1: linear absorbed
+  [OK ] fixed_tau2/fmin5_S10: const absorbed
+  [OK ] fixed_tau2/fmin5_S10: linear absorbed
+  [OK ] fixed_tau2/fmin5_S20: const absorbed
+  [OK ] fixed_tau2/fmin5_S20: linear absorbed
+  [OK ] noise scaling exact (S=10) -- 10.000000000
+  [OK ] noise scaling exact (S=20) -- 20.000000000
+  [OK ] band effect flips sign between conventions
+== h3_direct_fit.json ==
+  [OK ] H1: profile finite
+  [OK ] H1: recorded max is the grid max
+  [OK ] H1: profile drop < 1 sigma over the grid -- drop=0.2130
+  [OK ] H1: zero and paper amplitudes give the same profile value -- |d|=0.0119
+  [OK ] H1: sigma above ISCO < sigma total -- 20.71 < 37.31
+  [OK ] H1: amplitude scale preferred by data < 1 -- 0.1949
+  [OK ] H1: injection calibration recovers 20 within 5% -- 20.109
+  [OK ] L1: profile finite
+  [OK ] L1: recorded max is the grid max
+  [OK ] L1: profile drop < 1 sigma over the grid -- drop=0.0462
+  [OK ] L1: zero and paper amplitudes give the same profile value -- |d|=0.0016
+  [OK ] L1: sigma above ISCO < sigma total -- 18.17 < 33.71
+  [OK ] L1: amplitude scale preferred by data < 1 -- 0.1655
+  [OK ] L1: injection calibration recovers 20 within 5% -- 20.062
+  [OK ] two detectors agree within 5 ms
+
+INDEPENDENT_CONFIRMED: all recomputed values agree

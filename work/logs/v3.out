@@ -1,0 +1,41 @@
+artifacts dir: /work/time_flow_research_20260927/work/artifacts
+== H3 (real data) ==
+  [OK ] H1 H1 absorbed_fraction <= 1+1e-12 -- 1.0000000000000009
+  [OK ] H1 H1 residual SNR <= 1e-10 -- 3.405e-14
+  [OK ] H1 H2 residual SNR <= 1e-10 -- 1.874e-15
+  [OK ] H1 H3 quadratic NOT absorbed (< 0.999) -- 0.884873
+  [OK ] H1 H3 residual SNR < 1 -- 0.173999
+  [OK ] H1 detectable amplitude consistent -- got=34.4830 want=34.4830
+  [OK ] H1 sigma two routes agree -- 37.311842 vs 37.311842
+  [OK ] H1 peak within 100 ms of published merger -- 19.6 ms
+  [OK ] H1 on-source peak above 5 -- 7.274
+  [OK ] L1 H1 absorbed_fraction <= 1+1e-12 -- 1.0000000000000011
+  [OK ] L1 H1 residual SNR <= 1e-10 -- 4.822e-14
+  [OK ] L1 H2 residual SNR <= 1e-10 -- 6.387e-15
+  [OK ] L1 H3 quadratic NOT absorbed (< 0.999) -- 0.871649
+  [OK ] L1 H3 residual SNR < 1 -- 0.126917
+  [OK ] L1 detectable amplitude consistent -- got=47.2750 want=47.2750
+  [OK ] L1 sigma two routes agree -- 33.709714 vs 33.709714
+  [OK ] L1 peak within 100 ms of published merger -- 19.2 ms
+  [OK ] L1 on-source peak above 5 -- 5.580
+  [OK ] H1-L1 offset within 15 ms -- 0.366 ms
+  [OK ] H1 noise-only max peak < 8 -- 4.831
+  [OK ] H1 injection recovered within 5 of 20 -- 20.109
+  [OK ] H1 injection time within 2 ms -- 2.000122
+  [OK ] L1 noise-only max peak < 8 -- 4.775
+  [OK ] L1 injection recovered within 5 of 20 -- 20.031
+  [OK ] L1 injection time within 2 ms -- 2.000122
+  [OK ] H1 measured ASD(100 Hz) in [5e-24, 5e-23] -- 1.028e-23 /rtHz
+  [OK ] L1 measured ASD(100 Hz) in [5e-24, 5e-23] -- 9.849e-24 /rtHz
+== H4 (paper text) ==
+  [OK ] H4a geometric factor ~2.008 (independent route) -- got=2.008300 artifact=2.008300
+  [OK ] H4a geometric factor confirmed symbolically -- symbolic=2.0083004031
+  [OK ] H4a paper bare ratio equals the factor -- 2.0 vs 2.0083
+  [OK ] H4c volume-weighted mean redshift ~ 1.2503 (symbolic) -- got=1.2503387806 artifact=1.2503387806
+  [OK ] H4c the mean equals the paper's 1.25 within 0.1% -- rel diff = 2.710e-04
+  [OK ] radius for factor 1.25 is exactly 25/9 -- 2.7777777777777777 vs 2.7777777777777777
+  [OK ] NC1 shows H4a would flip
+  [OK ] NC2 excludes the 1.25 root
+  [OK ] NC3 shows the mean is shell-dependent
+
+INDEPENDENT_CONFIRMED: all recomputed values agree

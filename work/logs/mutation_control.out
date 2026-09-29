@@ -1,0 +1,29 @@
+baseline exit = 0  (must be 0)
+  [KILLED ] M1 drop the t_c column from the fit basis
+  [KILLED ] M2 drop the M_c column from the fit basis
+  [SURVIVED] M3 wrong chirp-mass derivative factor (5/3 -> 3/5)   <-- hole in the test
+  [KILLED ] M4 wrong t(f) coefficient (5/256 -> 5/128)
+  [KILLED ] M5 wrong strain amplitude exponent (-7/6 -> -7/5)
+  [SURVIVED] M6 wrong chirp phase coefficient (3/128 -> 3/64)   <-- hole in the test
+  [KILLED ] M7 delay phase missing the 2*pi factor
+  [KILLED ] M8 PSD not calibrated (drop the scale factor)
+  [KILLED ] M9 projection keeps only 2 of 3 basis directions
+  [KILLED ] M10 absorbed fraction reported as the residual fraction
+  [KILLED ] M11 H3 uses the linear instead of the quadratic delay
+  [INVALID] M12 K8 grid collapses to a single candidate: anchor count = 2
+  [KILLED ] M13 K9 grid collapses to a single candidate
+  [KILLED ] M14 wrong Rs (drop the factor 2)
+  [KILLED ] M15 wrong chirp mass formula (3/5 -> 2/5 exponent)
+  [SURVIVED] M16 wrong luminosity distance (410 -> 41)   <-- hole in the test
+  [KILLED ] M17 wrong frequency band (20-300 -> 20-3000)
+  [KILLED ] M18 wrong solar mass in seconds (drop G)
+  [SURVIVED] M19 sign flip in the delay direction   <-- hole in the test
+  [KILLED ] M20 threshold T5 inverted (lt 1 -> gt 1)
+
+killed   = 15/20
+survived = 4
+invalid  = 1
+  SURVIVOR: M3 wrong chirp-mass derivative factor (5/3 -> 3/5)
+  SURVIVOR: M6 wrong chirp phase coefficient (3/128 -> 3/64)
+  SURVIVOR: M16 wrong luminosity distance (410 -> 41)
+  SURVIVOR: M19 sign flip in the delay direction

@@ -1,0 +1,103 @@
+{
+  "II_numeric_rel_pn0": 3.2964908001493937e-09,
+  "II_numeric_rel_pn7": 2.9556322099055213e-09,
+  "identities": {
+    "II_numeric_pn0": true,
+    "II_numeric_pn7": true,
+    "I_LO_t_of_f_matches_closed_form": true
+  },
+  "projection": {
+    "pn0_Mc_tc_phic": {
+      "const": {
+        "absorbed_fraction": 0.9999999999999993,
+        "one_minus_absorbed": 6.661338147750939e-16,
+        "total_snr": 21.550685985135306,
+        "unmodelled_snr": 3.223656831621895e-14
+      },
+      "linear": {
+        "absorbed_fraction": 0.9999999999999998,
+        "one_minus_absorbed": 2.220446049250313e-16,
+        "total_snr": 150.76706550669167,
+        "unmodelled_snr": 3.753996074364864e-10
+      },
+      "quadratic": {
+        "absorbed_fraction": 0.9999916208906282,
+        "one_minus_absorbed": 8.379109371792204e-06,
+        "total_snr": 21.30909359290177,
+        "unmodelled_snr": 0.08723243481588144
+      },
+      "t_span_s": 0.8445045481241364
+    },
+    "pn7_Mc_eta_tc_phic": {
+      "const": {
+        "absorbed_fraction": 0.999999999999999,
+        "one_minus_absorbed": 9.992007221626409e-16,
+        "total_snr": 21.550685985135306,
+        "unmodelled_snr": 4.007480921119039e-14
+      },
+      "linear": {
+        "absorbed_fraction": 0.9999999999999994,
+        "one_minus_absorbed": 5.551115123125783e-16,
+        "total_snr": 148.86822896372553,
+        "unmodelled_snr": 3.111874084048569e-09
+      },
+      "quadratic": {
+        "absorbed_fraction": 0.9999966987249802,
+        "one_minus_absorbed": 3.301275019795824e-06,
+        "total_snr": 21.431071259098555,
+        "unmodelled_snr": 0.05506800872371997
+      },
+      "t_span_s": 0.8314382126504221
+    }
+  },
+  "reference_invariance": {
+    "band_end": {
+      "absorbed_fraction": 0.9529982025789956,
+      "unmodelled_snr": 0.05506800873632874
+    },
+    "band_start": {
+      "absorbed_fraction": 0.9999966987249802,
+      "unmodelled_snr": 0.05506800872371997
+    },
+    "coalescence": {
+      "absorbed_fraction": 0.9498132617663846,
+      "unmodelled_snr": 0.055068008736210754
+    }
+  },
+  "reference_spread": 2.2896733374661125e-10,
+  "setup": {
+    "Mchirp_Msun": 28.095555795460438,
+    "eta": 0.24710059171597631,
+    "t_span_3.5PN_s": 0.8314382126504221,
+    "tau0_ms": 1.2,
+    "taudot": 0.01
+  },
+  "symbolic": {
+    "pn0_identity_holds": true,
+    "pn0_negative_control_breaks": true,
+    "pn2_identity_holds": true,
+    "pn2_negative_control_breaks": true,
+    "pn7_identity_holds": true,
+    "pn7_negative_control_breaks": true
+  },
+  "thresholds": {
+    "A_const_absorbed_3.5PN": true,
+    "B_linear_absorbed_3.5PN": true,
+    "C_const_absorbed_LO": true,
+    "D_linear_absorbed_LO": true,
+    "E_quadratic_residual_lt_1_3.5PN": true,
+    "F_quadratic_residual_lt_1_LO": true,
+    "G_residual_invariant_under_reference": true,
+    "H_absorbed_fraction_NOT_reference_invariant": true,
+    "II_numeric_pn0": true,
+    "II_numeric_pn7": true,
+    "I_LO_t_of_f_matches_closed_form": true,
+    "I_t_span_plausible": true,
+    "pn0_identity_holds": true,
+    "pn0_negative_control_breaks": true,
+    "pn2_identity_holds": true,
+    "pn2_negative_control_breaks": true,
+    "pn7_identity_holds": true,
+    "pn7_negative_control_breaks": true
+  }
+}

@@ -1,0 +1,13 @@
+=== 1. symbolic root of 1+z(r) = 1.25 ===
+    sympy solutions: [25/9]
+  [OK ] root r/Rs (sympy): got=2.7777777777777777 want=2.7777777777777786
+  [OK ] 1+z at root: got=1.25 want=1.25
+    root 2.777778 inside stated range [1.5, 4.0] -> True
+=== 2. negative control: no root on [1.5, 2.5] ===
+    1+z on [1.5, 2.5] spans [1.290994, 1.732051]
+    contains 1.25 -> False
+=== 3. main H4 result must be unchanged ===
+  [OK ] geometric factor ~2: got=2.0083004031215705 want=2.0083004031215705
+  [OK ] t_volume_ms: got=1.2269060002076415 want=1.2269060002076415
+
+H4_INDEPENDENT_CONFIRMED: corrected sub-claim agrees by an independent symbolic route

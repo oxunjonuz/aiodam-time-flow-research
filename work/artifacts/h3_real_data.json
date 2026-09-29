@@ -1,0 +1,189 @@
+{
+  "controls": {
+    "H1_offsource_peak_snr": 3.3835101915043984,
+    "H1_offsource_peak_t_s": 3.2503662109375,
+    "L1_offsource_peak_snr": 3.6459017782051064,
+    "L1_offsource_peak_t_s": 2.7626953125
+  },
+  "inputs": {
+    "H1": {
+      "fs": 16384,
+      "gps_start": 1126259447,
+      "max_abs_strain": 7.912043421880075e-19,
+      "n_samples": 524288,
+      "rms_strain": 2.208784889523815e-19
+    },
+    "H1_psd": {
+      "asd_at_100Hz": 1.0275194697647844e-23,
+      "asd_min": 5.645129446712239e-24,
+      "consistency": "psd_whiten_check.py: median ASD(100Hz)=1.03e-23 /rtHz matches published aLIGO O1; a synthetic series from this PSD reproduces its own band integral to 0.98. The real off-source data carries ~6x more in-band power than this PSD, i.e. the released strain has non-Gaussian transients; the median is the robust estimator.",
+      "estimator": "MEDIAN Welch 1 s Hann 50% overlap, off-source 0-8 s + 24-32 s, /ln2",
+      "n_segments": 31,
+      "psd_at_100Hz": 1.0557962607457038e-46,
+      "psd_at_250Hz": 7.139012584710769e-47,
+      "psd_at_35Hz": 3.004166141532288e-43
+    },
+    "L1": {
+      "fs": 16384,
+      "gps_start": 1126259447,
+      "max_abs_strain": 1.9091681151188232e-18,
+      "n_samples": 524288,
+      "rms_strain": 1.0897787414835757e-18
+    },
+    "L1_psd": {
+      "asd_at_100Hz": 9.848940548987532e-24,
+      "asd_min": 6.16804572829517e-24,
+      "consistency": "psd_whiten_check.py: median ASD(100Hz)=1.03e-23 /rtHz matches published aLIGO O1; a synthetic series from this PSD reproduces its own band integral to 0.98. The real off-source data carries ~6x more in-band power than this PSD, i.e. the released strain has non-Gaussian transients; the median is the robust estimator.",
+      "estimator": "MEDIAN Welch 1 s Hann 50% overlap, off-source 0-8 s + 24-32 s, /ln2",
+      "n_segments": 31,
+      "psd_at_100Hz": 9.700162993749084e-47,
+      "psd_at_250Hz": 8.954059048161795e-47,
+      "psd_at_35Hz": 1.919125368833012e-42
+    }
+  },
+  "matched_filter": {
+    "H1": {
+      "coalescence_gps": 1126259462.4195924,
+      "offset_from_published_merger_ms": 19.59228515625,
+      "peak_snr": 7.273928125661218,
+      "peak_time_in_segment_s": 2.01959228515625,
+      "segment_start_s": 13.400000095367432,
+      "template_optimal_snr": 37.31184231798413
+    },
+    "H1_minus_L1_ms": 0.3662109375,
+    "L1": {
+      "coalescence_gps": 1126259462.4192262,
+      "offset_from_published_merger_ms": 19.22607421875,
+      "peak_snr": 5.579860999865262,
+      "peak_time_in_segment_s": 2.01922607421875,
+      "segment_start_s": 13.400000095367432,
+      "template_optimal_snr": 33.709713860505396
+    }
+  },
+  "mf_calibration": {
+    "H1": {
+      "injection_peak_rho": 19.699517256902478,
+      "injection_peak_time_s": 2.0001220703125,
+      "injection_recovered_max": 22.197944013606737,
+      "injection_recovered_mean": 20.108843164776108,
+      "injection_recovered_min": 18.331135510004884,
+      "injection_recovered_std": 0.833595081939813,
+      "injection_target_snr": 20.0,
+      "n_realizations": 64,
+      "noise_only_peak_max": 4.830562240713934,
+      "noise_only_peak_mean": 4.013030804538179,
+      "sigma_continuous_integral": 37.31184231798413,
+      "sigma_discrete_sum": 37.31184231798413
+    },
+    "L1": {
+      "injection_peak_rho": 20.817484934144662,
+      "injection_peak_time_s": 2.0001220703125,
+      "injection_recovered_max": 23.25051431646219,
+      "injection_recovered_mean": 20.030994990396927,
+      "injection_recovered_min": 17.487235007173112,
+      "injection_recovered_std": 1.0731104743182884,
+      "injection_target_snr": 20.0,
+      "n_realizations": 64,
+      "noise_only_peak_max": 4.774848139154336,
+      "noise_only_peak_mean": 4.072503221985428,
+      "sigma_continuous_integral": 33.709713860505396,
+      "sigma_discrete_sum": 33.709713860505396
+    }
+  },
+  "projection": {
+    "H1": {
+      "H1_const_delay": {
+        "absorbed_fraction": 1.0000000000000009,
+        "amplitude_ms": 1.2,
+        "one_minus_absorbed": -8.881784197001252e-16,
+        "unmodelled_snr": 3.405251636242753e-14
+      },
+      "H2_linear_delay": {
+        "absorbed_fraction": 1.0000000000000002,
+        "one_minus_absorbed": -2.220446049250313e-16,
+        "taudot": 0.01,
+        "unmodelled_snr": 1.8737265634425105e-15
+      },
+      "H3_quadratic": {
+        "absorbed_fraction": 0.8848734532582031,
+        "amplitude_ms": 1.2,
+        "detectable_amplitude_ms_at_snr5": 34.483002681659485,
+        "fisher_sigma_amplitude_ms": 6.896600536331955,
+        "one_minus_absorbed": 0.1151265467417969,
+        "ratio_detectable_to_paper": 28.735835568049573,
+        "unmodelled_snr": 0.17399876847706267
+      },
+      "controls": {
+        "freeze_mc_absorbed": 0.8488184917574263,
+        "freeze_mc_snr": 35.8064256083544,
+        "freeze_tc_absorbed": 0.9362223853404044,
+        "freeze_tc_snr": 12.50527194150533,
+        "scrambled_absorbed": 0.3288339226581812,
+        "zero_injection_snr": 0.0
+      },
+      "signal_snr_model": 37.31184231798413,
+      "t_span_s": 0.8444822952069388
+    },
+    "L1": {
+      "H1_const_delay": {
+        "absorbed_fraction": 1.000000000000001,
+        "amplitude_ms": 1.2,
+        "one_minus_absorbed": -1.1102230246251565e-15,
+        "unmodelled_snr": 4.822186483959968e-14
+      },
+      "H2_linear_delay": {
+        "absorbed_fraction": 0.9999999999999989,
+        "one_minus_absorbed": 1.1102230246251565e-15,
+        "taudot": 0.01,
+        "unmodelled_snr": 6.386861530770637e-15
+      },
+      "H3_quadratic": {
+        "absorbed_fraction": 0.8716487429155013,
+        "amplitude_ms": 1.2,
+        "detectable_amplitude_ms_at_snr5": 47.27498830207957,
+        "fisher_sigma_amplitude_ms": 9.4549976604159,
+        "one_minus_absorbed": 0.12835125708449868,
+        "ratio_detectable_to_paper": 39.39582358506632,
+        "unmodelled_snr": 0.12691700655029176
+      },
+      "controls": {
+        "freeze_mc_absorbed": 0.8645385495579262,
+        "freeze_mc_snr": 28.778106317410664,
+        "freeze_tc_absorbed": 0.9388120440392155,
+        "freeze_tc_snr": 11.476060810451587,
+        "scrambled_absorbed": 0.41039853925755576,
+        "zero_injection_snr": 0.0
+      },
+      "signal_snr_model": 33.709713860505396,
+      "t_span_s": 0.8444822952069388
+    }
+  },
+  "selfchecks": {
+    "S1_files_are_32s_16kHz_at_stated_gps": true,
+    "S2_sigma_two_routes_agree": true,
+    "S3_noise_only_peak_below_8_all_realizations": true,
+    "S4_injection_snr20_recovered_within_25pct": true,
+    "S5_injection_time_recovered_within_2ms": true,
+    "S6_onsource_above_5_and_above_offsource": true,
+    "S7_real_peak_within_100ms_of_published_merger": true,
+    "S8_H1_H2_absorbed_with_measured_psd": true,
+    "S9_quadratic_not_absorbed": true
+  },
+  "thresholds": {
+    "S1_files_are_32s_16kHz_at_stated_gps": true,
+    "S2_sigma_two_routes_agree": true,
+    "S3_noise_only_peak_below_8_all_realizations": true,
+    "S4_injection_snr20_recovered_within_25pct": true,
+    "S5_injection_time_recovered_within_2ms": true,
+    "S6_onsource_above_5_and_above_offsource": true,
+    "S7_real_peak_within_100ms_of_published_merger": true,
+    "S8_H1_H2_absorbed_with_measured_psd": true,
+    "S9_quadratic_not_absorbed": true,
+    "T13_freeze_tc_snr_gt_5": true,
+    "T14_freeze_mc_snr_gt_5": true,
+    "T15_scrambled_not_absorbed": true,
+    "T5_H3_snr_lt_1": true,
+    "T6_H3_x100_snr_ge_5": true,
+    "T7_zero_injection_le_1e-12": true
+  }
+}

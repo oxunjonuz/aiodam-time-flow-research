@@ -1,0 +1,112 @@
+{
+  "answer": "TWO separate statements, and they come out differently.\n(1) 37.3 is NOT a normalisation error: reproduced exactly (NC1) from the pipeline's own convention.  It IS an integral over 20-300 Hz, and 69-71% of the template's sigma^2 lies ABOVE the ISCO frequency (67.63 Hz), where the leading-order inspiral is not valid.  Cut at ISCO and rho_opt falls to 20.71 (H1) / 18.17 (L1) -- the published single-detector value.  Cut at 250 Hz instead and it stays at 36.58 / 32.87, so the reduction is a VALIDITY effect, not a bandwidth effect.  On this point the owner is right: 'optimal SNR 37.3' is not a physically meaningful number.\n(2) But B2 is NOT simply B3 in other clothes.  If it were, cutting the band at the validity limit would drive the data's preferred amplitude scale to 1.  Measured: 0.195 -> 0.339 (H1), 0.166 -> 0.291 (L1).  The deficit shrinks from 5.1x to 3.0x (H1) / 3.4x (L1) and STOPS.  So B3 accounts for about a factor 1.7 of the 5.1 and leaves a genuine factor ~3 unexplained.  That residue is the real open item, and its candidate causes (sky/orientation average vs this event's actual response; published 20 being a full-IMR number) cannot be separated without an IMR waveform -- the same ceiling already declared.",
+  "bands": {
+    "H1": {
+      "B3_fraction_sigma2_above_isco": 0.6919228405533989,
+      "B3_sigma_above_isco": 31.036699181024304,
+      "NC3_scale2_over_scale1": 2.0,
+      "bands": {
+        "B_full_20_300": {
+          "fraction_of_full": 1.0,
+          "hi_Hz": 300.0,
+          "lo_Hz": 20.0,
+          "n_bins": 1121,
+          "rho_opt": 37.31184231798413
+        },
+        "B_imr_20_250": {
+          "fraction_of_full": 0.9805190012563197,
+          "hi_Hz": 250.0,
+          "lo_Hz": 20.0,
+          "n_bins": 921,
+          "rho_opt": 36.584970364663086
+        },
+        "B_isco_20_67.63": {
+          "fraction_of_full": 0.5550469885033169,
+          "hi_Hz": 67.63042224846346,
+          "lo_Hz": 20.0,
+          "n_bins": 191,
+          "rho_opt": 20.709825714107712
+        }
+      },
+      "f_isco_Hz": 67.63042224846346,
+      "scale_vs_band": {
+        "B_full_20_300": {
+          "peak_rho": 7.269911305481557,
+          "rho_opt": 37.31184231798413,
+          "scale": 0.19484192829517546
+        },
+        "B_imr_20_250": {
+          "peak_rho": 7.986825308414555,
+          "rho_opt": 36.584970364663086,
+          "scale": 0.21830891835650953
+        },
+        "B_isco_20_67.63": {
+          "peak_rho": 7.009299455744397,
+          "rho_opt": 20.709825714107712,
+          "scale": 0.3384528461275076
+        }
+      }
+    },
+    "L1": {
+      "B3_fraction_sigma2_above_isco": 0.709442693473727,
+      "B3_sigma_above_isco": 28.3931597695232,
+      "NC3_scale2_over_scale1": 2.0,
+      "bands": {
+        "B_full_20_300": {
+          "fraction_of_full": 1.0,
+          "hi_Hz": 300.0,
+          "lo_Hz": 20.0,
+          "n_bins": 1121,
+          "rho_opt": 33.709713860505396
+        },
+        "B_imr_20_250": {
+          "fraction_of_full": 0.9752303133570889,
+          "hi_Hz": 250.0,
+          "lo_Hz": 20.0,
+          "n_bins": 921,
+          "rho_opt": 32.87473481135848
+        },
+        "B_isco_20_67.63": {
+          "fraction_of_full": 0.5390336784712743,
+          "hi_Hz": 67.63042224846346,
+          "lo_Hz": 20.0,
+          "n_bins": 191,
+          "rho_opt": 18.170671062442324
+        }
+      },
+      "f_isco_Hz": 67.63042224846346,
+      "scale_vs_band": {
+        "B_full_20_300": {
+          "peak_rho": 5.587009431058464,
+          "rho_opt": 33.709713860505396,
+          "scale": 0.1657388565853196
+        },
+        "B_imr_20_250": {
+          "peak_rho": 5.187223405223356,
+          "rho_opt": 32.87473481135848,
+          "scale": 0.15778753608169424
+        },
+        "B_isco_20_67.63": {
+          "peak_rho": 5.285344968051747,
+          "rho_opt": 18.170671062442324,
+          "scale": 0.29087230459948366
+        }
+      }
+    }
+  },
+  "controls": {
+    "NC1_full_band_reproduces_recorded_37.31": true,
+    "NC2_capped_bands_smaller_than_full": true,
+    "NC3_rho_opt_linear_in_amplitude": true
+  },
+  "thresholds": {
+    "NC1_full_band_reproduces_recorded_37.31": true,
+    "NC2_capped_bands_smaller_than_full": true,
+    "NC3_rho_opt_linear_in_amplitude": true,
+    "T_imr_band_does_NOT_fix_it": true,
+    "T_isco_band_agrees_with_published_20_within_10pct": true,
+    "T_isco_cut_removes_over_half_the_sigma2": true,
+    "T_scale_after_isco_cut_still_below_0.5": true,
+    "T_scale_moves_towards_1_when_band_cut": true
+  }
+}

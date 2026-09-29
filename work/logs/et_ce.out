@@ -1,0 +1,436 @@
+{
+  "cells": {
+    "fixed_peak_amplitude": {
+      "fmin10_S1": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000009,
+          "detectable_amplitude_ms_at_snr5": 126435274356320.34,
+          "unmodelled_snr": 4.7455111166926234e-14
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 10.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000007,
+          "detectable_amplitude_ms_at_snr5": 3062093859801.73,
+          "unmodelled_snr": 1.959443529398703e-12
+        },
+        "noise_scale": 1.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999995012066155,
+          "detectable_amplitude_ms_at_snr5": 280.2335591045573,
+          "unmodelled_snr": 0.021410711904641493
+        },
+        "signal_snr": 20.0,
+        "t_span_s": 5.36557331066891,
+        "tau2": 4.168204133052145e-05
+      },
+      "fmin10_S10": {
+        "const": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 8178849675513.056,
+          "unmodelled_snr": 7.335994960224796e-13
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 10.0,
+        "linear": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 185438364795.12308,
+          "unmodelled_snr": 3.23557641733357e-11
+        },
+        "noise_scale": 10.0,
+        "quadratic": {
+          "absorbed_fraction": 0.999999501206618,
+          "detectable_amplitude_ms_at_snr5": 28.023355910454086,
+          "unmodelled_snr": 0.21410711904642743
+        },
+        "signal_snr": 199.99999999999997,
+        "t_span_s": 5.36557331066891,
+        "tau2": 4.168204133052145e-05
+      },
+      "fmin10_S20": {
+        "const": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 4089424837756.528,
+          "unmodelled_snr": 1.4671989920449593e-12
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 10.0,
+        "linear": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 92719182397.56154,
+          "unmodelled_snr": 6.47115283466714e-11
+        },
+        "noise_scale": 20.0,
+        "quadratic": {
+          "absorbed_fraction": 0.999999501206618,
+          "detectable_amplitude_ms_at_snr5": 14.011677955227043,
+          "unmodelled_snr": 0.42821423809285486
+        },
+        "signal_snr": 399.99999999999994,
+        "t_span_s": 5.36557331066891,
+        "tau2": 4.168204133052145e-05
+      },
+      "fmin20_S1": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000009,
+          "detectable_amplitude_ms_at_snr5": 173444020902763.7,
+          "unmodelled_snr": 3.45932939560005e-14
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 20.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000007,
+          "detectable_amplitude_ms_at_snr5": 30498673784484.727,
+          "unmodelled_snr": 1.9672986577705937e-13
+        },
+        "noise_scale": 1.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999916208906295,
+          "detectable_amplitude_ms_at_snr5": 68.78175546364466,
+          "unmodelled_snr": 0.08723243481581922
+        },
+        "signal_snr": 19.999999999999996,
+        "t_span_s": 0.844504548124138,
+        "tau2": 0.0016825859587491665
+      },
+      "fmin20_S10": {
+        "const": {
+          "absorbed_fraction": 1.000000000000001,
+          "detectable_amplitude_ms_at_snr5": 16489024165159.0,
+          "unmodelled_snr": 3.638784163272613e-13
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 20.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000016,
+          "detectable_amplitude_ms_at_snr5": 1894102545704.1372,
+          "unmodelled_snr": 3.167727118897612e-12
+        },
+        "noise_scale": 10.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999916208906295,
+          "detectable_amplitude_ms_at_snr5": 6.878175546364459,
+          "unmodelled_snr": 0.8723243481581929
+        },
+        "signal_snr": 199.99999999999997,
+        "t_span_s": 0.844504548124138,
+        "tau2": 0.0016825859587491665
+      },
+      "fmin20_S20": {
+        "const": {
+          "absorbed_fraction": 1.000000000000001,
+          "detectable_amplitude_ms_at_snr5": 8244512082579.5,
+          "unmodelled_snr": 7.277568326545226e-13
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 20.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000016,
+          "detectable_amplitude_ms_at_snr5": 947051272852.0686,
+          "unmodelled_snr": 6.335454237795224e-12
+        },
+        "noise_scale": 20.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999916208906295,
+          "detectable_amplitude_ms_at_snr5": 3.4390877731822296,
+          "unmodelled_snr": 1.7446486963163859
+        },
+        "signal_snr": 399.99999999999994,
+        "t_span_s": 0.844504548124138,
+        "tau2": 0.0016825859587491665
+      },
+      "fmin5_S1": {
+        "const": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 878573731207328.5,
+          "unmodelled_snr": 6.829250393993513e-15
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 5.0,
+        "linear": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 3278040000824.0938,
+          "unmodelled_snr": 1.830362045152472e-12
+        },
+        "noise_scale": 1.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999999761828839,
+          "detectable_amplitude_ms_at_snr5": 1280.9763885258858,
+          "unmodelled_snr": 0.004683927083858777
+        },
+        "signal_snr": 20.0,
+        "t_span_s": 34.07257054940545,
+        "tau2": 1.0336450927763227e-06
+      },
+      "fmin5_S10": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000002,
+          "detectable_amplitude_ms_at_snr5": 69441066035708.02,
+          "unmodelled_snr": 8.640420348550922e-14
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 5.0,
+        "linear": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 261614827771.42206,
+          "unmodelled_snr": 2.293447986534737e-11
+        },
+        "noise_scale": 10.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999999761828842,
+          "detectable_amplitude_ms_at_snr5": 128.09763885259378,
+          "unmodelled_snr": 0.04683927083858586
+        },
+        "signal_snr": 200.00000000000003,
+        "t_span_s": 34.07257054940545,
+        "tau2": 1.0336450927763227e-06
+      },
+      "fmin5_S20": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000002,
+          "detectable_amplitude_ms_at_snr5": 34720533017854.01,
+          "unmodelled_snr": 1.7280840697101845e-13
+        },
+        "convention": "fixed_peak_amplitude",
+        "fmin_Hz": 5.0,
+        "linear": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 130807413885.71103,
+          "unmodelled_snr": 4.586895973069474e-11
+        },
+        "noise_scale": 20.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999999761828842,
+          "detectable_amplitude_ms_at_snr5": 64.04881942629689,
+          "unmodelled_snr": 0.09367854167717173
+        },
+        "signal_snr": 400.00000000000006,
+        "t_span_s": 34.07257054940545,
+        "tau2": 1.0336450927763227e-06
+      }
+    },
+    "fixed_tau2": {
+      "fmin10_S1": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000009,
+          "detectable_amplitude_ms_at_snr5": 126435274356320.34,
+          "unmodelled_snr": 4.7455111166926234e-14
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 10.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000007,
+          "detectable_amplitude_ms_at_snr5": 3062093859801.73,
+          "unmodelled_snr": 1.959443529398703e-12
+        },
+        "noise_scale": 1.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999995012066162,
+          "detectable_amplitude_ms_at_snr5": 6.94175008460761,
+          "unmodelled_snr": 0.864335351585789
+        },
+        "signal_snr": 20.0,
+        "t_span_s": 5.36557331066891,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin10_S10": {
+        "const": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 8178849675513.056,
+          "unmodelled_snr": 7.335994960224796e-13
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 10.0,
+        "linear": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 185438364795.12308,
+          "unmodelled_snr": 3.23557641733357e-11
+        },
+        "noise_scale": 10.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999995012066181,
+          "detectable_amplitude_ms_at_snr5": 0.6941750084607213,
+          "unmodelled_snr": 8.643353515858383
+        },
+        "signal_snr": 199.99999999999997,
+        "t_span_s": 5.36557331066891,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin10_S20": {
+        "const": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 4089424837756.528,
+          "unmodelled_snr": 1.4671989920449593e-12
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 10.0,
+        "linear": {
+          "absorbed_fraction": 1.000000000000003,
+          "detectable_amplitude_ms_at_snr5": 92719182397.56154,
+          "unmodelled_snr": 6.47115283466714e-11
+        },
+        "noise_scale": 20.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999995012066181,
+          "detectable_amplitude_ms_at_snr5": 0.34708750423036067,
+          "unmodelled_snr": 17.286707031716766
+        },
+        "signal_snr": 399.99999999999994,
+        "t_span_s": 5.36557331066891,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin20_S1": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000009,
+          "detectable_amplitude_ms_at_snr5": 173444020902763.7,
+          "unmodelled_snr": 3.45932939560005e-14
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 20.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000007,
+          "detectable_amplitude_ms_at_snr5": 30498673784484.727,
+          "unmodelled_snr": 1.9672986577705937e-13
+        },
+        "noise_scale": 1.0,
+        "quadratic": {
+          "absorbed_fraction": 0.999991620890629,
+          "detectable_amplitude_ms_at_snr5": 68.7781306766692,
+          "unmodelled_snr": 0.08723703219278257
+        },
+        "signal_snr": 19.999999999999996,
+        "t_span_s": 0.844504548124138,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin20_S10": {
+        "const": {
+          "absorbed_fraction": 1.000000000000001,
+          "detectable_amplitude_ms_at_snr5": 16489024165159.0,
+          "unmodelled_snr": 3.638784163272613e-13
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 20.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000016,
+          "detectable_amplitude_ms_at_snr5": 1894102545704.1372,
+          "unmodelled_snr": 3.167727118897612e-12
+        },
+        "noise_scale": 10.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999916208906302,
+          "detectable_amplitude_ms_at_snr5": 6.877813067666914,
+          "unmodelled_snr": 0.8723703219278267
+        },
+        "signal_snr": 199.99999999999997,
+        "t_span_s": 0.844504548124138,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin20_S20": {
+        "const": {
+          "absorbed_fraction": 1.000000000000001,
+          "detectable_amplitude_ms_at_snr5": 8244512082579.5,
+          "unmodelled_snr": 7.277568326545226e-13
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 20.0,
+        "linear": {
+          "absorbed_fraction": 1.0000000000000016,
+          "detectable_amplitude_ms_at_snr5": 947051272852.0686,
+          "unmodelled_snr": 6.335454237795224e-12
+        },
+        "noise_scale": 20.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999916208906302,
+          "detectable_amplitude_ms_at_snr5": 3.438906533833457,
+          "unmodelled_snr": 1.7447406438556534
+        },
+        "signal_snr": 399.99999999999994,
+        "t_span_s": 0.844504548124138,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin5_S1": {
+        "const": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 878573731207328.5,
+          "unmodelled_snr": 6.829250393993513e-15
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 5.0,
+        "linear": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 3278040000824.0938,
+          "unmodelled_snr": 1.830362045152472e-12
+        },
+        "noise_scale": 1.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999999761828842,
+          "detectable_amplitude_ms_at_snr5": 0.7868870963467461,
+          "unmodelled_snr": 7.624982069036326
+        },
+        "signal_snr": 20.0,
+        "t_span_s": 34.07257054940545,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin5_S10": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000002,
+          "detectable_amplitude_ms_at_snr5": 69441066035708.02,
+          "unmodelled_snr": 8.640420348550922e-14
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 5.0,
+        "linear": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 261614827771.42206,
+          "unmodelled_snr": 2.293447986534737e-11
+        },
+        "noise_scale": 10.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999999761828845,
+          "detectable_amplitude_ms_at_snr5": 0.07868870963467794,
+          "unmodelled_snr": 76.24982069036004
+        },
+        "signal_snr": 200.00000000000003,
+        "t_span_s": 34.07257054940545,
+        "tau2": 0.0016826746354201996
+      },
+      "fmin5_S20": {
+        "const": {
+          "absorbed_fraction": 1.0000000000000002,
+          "detectable_amplitude_ms_at_snr5": 34720533017854.01,
+          "unmodelled_snr": 1.7280840697101845e-13
+        },
+        "convention": "fixed_tau2",
+        "fmin_Hz": 5.0,
+        "linear": {
+          "absorbed_fraction": 1.0,
+          "detectable_amplitude_ms_at_snr5": 130807413885.71103,
+          "unmodelled_snr": 4.586895973069474e-11
+        },
+        "noise_scale": 20.0,
+        "quadratic": {
+          "absorbed_fraction": 0.9999999761828845,
+          "detectable_amplitude_ms_at_snr5": 0.03934435481733897,
+          "unmodelled_snr": 152.49964138072008
+        },
+        "signal_snr": 400.00000000000006,
+        "t_span_s": 34.07257054940545,
+        "tau2": 0.0016826746354201996
+      }
+    }
+  },
+  "noise_scaling_ratios": {
+    "S10_ratio": 10.000000000000009,
+    "S20_ratio": 20.000000000000018
+  },
+  "notes": {
+    "interpretation": "The const and linear delays are absorbed exactly (to 1e-10) in EVERY cell: any band, any sensitivity. That part is an algebraic identity, not a number. The quadratic residual scales EXACTLY linearly with detector sensitivity (ratio 10.000000000 for S=10, 20.000000000 for S=20), so a 10x-better detector multiplies it by 10. Its response to opening the band DOWNWARD flips sign with the normalisation convention: with the amplitude pinned at 1.2 ms at the band edge it DROPS (0.0872 at 20 Hz vs 0.0047 at 5 Hz, because t_span^2 grows), while with tau2 held fixed it RISES (0.0872 vs 7.6250). Since the paper never states tau(t)'s functional form, the sign of the ET/CE band benefit is not determined by the paper. That is the honest ceiling on this step."
+  },
+  "thresholds": {
+    "all_const_absorbed": true,
+    "all_linear_absorbed": true,
+    "band_effect_flips_sign_with_convention": true,
+    "noise_scaling_is_exact": true,
+    "quadratic_grows_with_sensitivity": true
+  }
+}

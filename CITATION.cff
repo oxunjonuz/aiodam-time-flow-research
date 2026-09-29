@@ -1,0 +1,89 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Is the Müller–Maguire “now”-theory prediction falsifiable on GW150914? A formal identifiability audit, with a numerical check on real LIGO strain"
+abstract: >-
+  Müller and Maguire (arXiv:1606.07975) estimate an additional gravitational-wave
+  signal delay of order 1–1.5 ms at black-hole merger and call the calculation
+  heuristic. We ask a narrower, decidable question: is that prediction specified
+  precisely enough to be distinguished from general relativity and from a re-fit
+  of the source parameters? We answer it in three independent registers. Formally,
+  in Lean 4 with Mathlib, we prove an identifiability criterion for the additive
+  model M(θ,τ) = Aθ + Bτ and show it is a genuine dichotomy. Symbolically, we show
+  that a constant delay and a linear delay are exactly reparameterizations of the
+  coalescence time t_c and the chirp mass M_c at every post-Newtonian order, so the
+  degeneracy is not an artifact of the leading order. Numerically, on the real
+  GW150914 strain (H1 and L1, with a PSD measured from off-source data and a
+  physical amplitude), a coherent two-detector fit with one τ₂ recovers a 20 ms
+  injected delay but cannot resolve the claimed 1.2 ms; the first non-degenerate
+  (quadratic) term yields a signal-to-noise ratio of 0.13–0.17, i.e. zero. What is
+  proven is degeneracy within the adopted linear model; the specific delay function
+  τ(t) is not derived from the theory, because the paper does not specify it.
+type: software
+authors:
+  - name: "Aiodam"
+    affiliation: "Autonomous research agent"
+    # Aiodam is the autonomous agent that carried out the study; its affiliation
+    # string is descriptive, not an institution.
+  - family-names: "Ubaydullayev"
+    given-names: "Oxunjon"
+    affiliation: "Independent researcher"
+date-released: "2026-09-28"
+version: "1.0.0"
+license: "CC-BY-4.0"
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+keywords:
+  - gravitational waves
+  - GW150914
+  - falsifiability
+  - identifiability
+  - arrow of time
+  - growing block universe
+  - Lean 4
+  - formal verification
+  - LIGO
+  - matched filter
+  - post-Newtonian
+  - Müller Maguire
+repository-code: "https://github.com/oxunjonuz/aiodam-time-flow-research"
+url: "https://github.com/oxunjonuz/aiodam-time-flow-research"
+references:
+  - type: article
+    title: "Now, and the Flow of Time"
+    authors:
+      - family-names: "Muller"
+        given-names: "Richard A."
+      - family-names: "Maguire"
+        given-names: "Shaun"
+    year: 2016
+    notes: "arXiv:1606.07975 — the paper whose prediction we audit"
+    url: "https://arxiv.org/abs/1606.07975"
+  - type: article
+    title: "Observation of Gravitational Waves from a Binary Black Hole Merger"
+    year: 2016
+    notes: "arXiv:1602.03837, Phys. Rev. Lett. 116, 061102"
+    url: "https://arxiv.org/abs/1602.03837"
+  - type: article
+    title: "Properties of the Binary Black Hole Merger GW150914"
+    year: 2016
+    notes: "arXiv:1602.03840, Phys. Rev. Lett. 116, 241102"
+    url: "https://arxiv.org/abs/1602.03840"
+  - type: article
+    title: "GW150914: First results from the search for binary black hole coalescence with Advanced LIGO"
+    year: 2016
+    notes: "arXiv:1602.03839 — source of the single-detector SNRs 19.5 (H1) and 13.3 (L1)"
+    url: "https://arxiv.org/abs/1602.03839"
+  - type: article
+    title: "Tests of general relativity with GW150914"
+    year: 2016
+    notes: "arXiv:1606.03833, Phys. Rev. Lett. 116, 221101"
+    url: "https://arxiv.org/abs/1606.03833"
+  - type: article
+    title: "GWTC-1: A Gravitational-Wave Transient Catalog of Compact Binary Mergers Observed by LIGO and Virgo during the First and Second Observing Runs"
+    year: 2019
+    notes: "Phys. Rev. X 9, 031040"
+    url: "https://doi.org/10.1103/PhysRevX.9.031040"
+  - type: software
+    title: "The Lean Mathematical Library"
+    year: 2020
+    notes: "The Mathlib Community, CPP 2020"
+    url: "https://leanprover-community.github.io/mathlib4_docs/"

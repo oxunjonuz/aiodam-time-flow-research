@@ -1,0 +1,174 @@
+/work/time_flow_research_20260927/work/h3_imr_check.py:106: RuntimeWarning: divide by zero encountered in power
+  * Mc ** (5.0 / 6.0) * f ** (-7.0 / 6.0)
+/work/time_flow_research_20260927/work/h3_imr_check.py:184: RuntimeWarning: divide by zero encountered in power
+  1j * ((3.0 / 128.0) * (np.pi * MC * freqs) ** (-5.0 / 3.0) - np.pi / 4.0))
+/work/time_flow_research_20260927/work/h3_imr_check.py:184: RuntimeWarning: invalid value encountered in multiply
+  1j * ((3.0 / 128.0) * (np.pi * MC * freqs) ** (-5.0 / 3.0) - np.pi / 4.0))
+/work/time_flow_research_20260927/work/h3_imr_check.py:183: RuntimeWarning: invalid value encountered in exp
+  lo_ht = amp_cont(freqs, MC, DL) * np.exp(
+{
+  "bands": {
+    "H1": {
+      "NC5_first_draft_claim_was_false": true,
+      "NC5_max_abs_below_fmin": 2.64843446806079e-23,
+      "NC5_model_f_min_Hz": 16.174211336999875,
+      "NC5_power_below_over_inband": 0.005174848557828749,
+      "bands": {
+        "B_full_20_300": {
+          "amplitude_scale_IMR": 0.5288128426510584,
+          "amplitude_scale_LO": 0.19493140180342292,
+          "hi_Hz": 300.0,
+          "imr_over_LO": 0.8485111089342453,
+          "lo_Hz": 20.0,
+          "n_bins": 1121,
+          "peak_snr_IMR": 16.74195690868695,
+          "peak_snr_LO": 7.2732497269129235,
+          "peak_time_IMR_s": 2.1851806640625,
+          "peak_time_LO_s": 2.01953125,
+          "rho_opt_IMR": 31.659512701612417,
+          "rho_opt_inspiral_LO": 37.31184231798413
+        },
+        "B_imr_20_250": {
+          "amplitude_scale_IMR": 0.5330229433257455,
+          "amplitude_scale_LO": 0.21842558789998948,
+          "hi_Hz": 250.0,
+          "imr_over_LO": 0.8460613249428776,
+          "lo_Hz": 20.0,
+          "n_bins": 921,
+          "peak_snr_IMR": 16.498727658062244,
+          "peak_snr_LO": 7.991093660205227,
+          "peak_time_IMR_s": 2.1851806640625,
+          "peak_time_LO_s": 2.01953125,
+          "rho_opt_IMR": 30.953128499722762,
+          "rho_opt_inspiral_LO": 36.584970364663086
+        },
+        "B_isco_20_67.63": {
+          "amplitude_scale_IMR": 0.5348304096096265,
+          "amplitude_scale_LO": 0.3395372499463806,
+          "hi_Hz": 67.63042224846346,
+          "imr_over_LO": 0.807808443694468,
+          "lo_Hz": 20.0,
+          "n_bins": 191,
+          "peak_snr_IMR": 8.947483887764198,
+          "peak_snr_LO": 7.031757269836971,
+          "peak_time_IMR_s": 2.1993408203125,
+          "peak_time_LO_s": 1.9366455078125,
+          "rho_opt_IMR": 16.729572079297025,
+          "rho_opt_inspiral_LO": 20.709825714107712
+        }
+      },
+      "recorded_LO_full_band": 37.31184231798413
+    },
+    "L1": {
+      "NC5_first_draft_claim_was_false": true,
+      "NC5_max_abs_below_fmin": 2.64843446806079e-23,
+      "NC5_model_f_min_Hz": 16.174211336999875,
+      "NC5_power_below_over_inband": 0.005174848557828749,
+      "bands": {
+        "B_full_20_300": {
+          "amplitude_scale_IMR": 0.44698453348753847,
+          "amplitude_scale_LO": 0.1654681103947282,
+          "hi_Hz": 300.0,
+          "imr_over_LO": 0.8524261475478901,
+          "lo_Hz": 20.0,
+          "n_bins": 1121,
+          "peak_snr_IMR": 12.844119129032624,
+          "peak_snr_LO": 5.577882654444806,
+          "peak_time_IMR_s": 2.17822265625,
+          "peak_time_LO_s": 2.019287109375,
+          "rho_opt_IMR": 28.73504152105233,
+          "rho_opt_inspiral_LO": 33.709713860505396
+        },
+        "B_imr_20_250": {
+          "amplitude_scale_IMR": 0.45465534637850324,
+          "amplitude_scale_LO": 0.15760481925454814,
+          "hi_Hz": 250.0,
+          "imr_over_LO": 0.8500211237758627,
+          "lo_Hz": 20.0,
+          "n_bins": 921,
+          "peak_snr_IMR": 12.704988581535943,
+          "peak_snr_LO": 5.181216637985355,
+          "peak_time_IMR_s": 2.1783447265625,
+          "peak_time_LO_s": 2.0191650390625,
+          "rho_opt_IMR": 27.944219028184406,
+          "rho_opt_inspiral_LO": 32.87473481135848
+        },
+        "B_isco_20_67.63": {
+          "amplitude_scale_IMR": 0.3874724667950847,
+          "amplitude_scale_LO": 0.24760968996418192,
+          "hi_Hz": 67.63042224846346,
+          "imr_over_LO": 0.8085751270654792,
+          "lo_Hz": 20.0,
+          "n_bins": 191,
+          "peak_snr_IMR": 5.692882129425426,
+          "peak_snr_LO": 4.499234228212476,
+          "peak_time_IMR_s": 2.183837890625,
+          "peak_time_LO_s": 1.9326171875,
+          "rho_opt_IMR": 14.692352663179328,
+          "rho_opt_inspiral_LO": 18.170671062442324
+        }
+      },
+      "recorded_LO_full_band": 33.709713860505396
+    }
+  },
+  "control_values": {
+    "r0": 0.0,
+    "r1": 31.659512701612417,
+    "r2": 63.319025403224835,
+    "r2_over_r1": 2.0
+  },
+  "controls": {
+    "NC1_inspiral_reproduces_recorded_full_band": true,
+    "NC2_IMR_rho_opt_positive_finite": true,
+    "NC3_amplitude_linearity": true,
+    "NC4_zero_waveform_zero_rho": true,
+    "NC5_power_below_fmin_under_1pct": true
+  },
+  "controls_all_pass": true,
+  "findings": {
+    "T_IMR_full_band_below_inspiral": true,
+    "T_IMR_full_band_within_25pct_of_20": false,
+    "T_amplitude_scale_IMR_closer_to_1_than_LO": true,
+    "T_inclination_sweep_monotone_decreasing": true,
+    "T_rho_opt_20_reached_within_60deg": true
+  },
+  "inclination_sweep_H1_rho_opt": {
+    "0.0": 31.659512701612417,
+    "15.0": 30.599120093967446,
+    "30.0": 27.70207361391088,
+    "45.0": 23.744634526209317,
+    "60.0": 19.787195438507773,
+    "90.0": 15.8297563508062
+  },
+  "inclination_where_rho_opt_equals_20_deg": 59.19340049167065,
+  "notes": {
+    "convention": "rho_opt^2 = 4*df*sum|h~|^2/Sn, df = 0.25 Hz, identical to h3_rho_opt_bands.py (there C*|H|^2 = 4*df*amp^2).",
+    "limits": "inclination=0 (maximal amplitude) and zero spins; the IMR rho_opt is an upper bound on the template's optimal SNR. The delay is not fitted here.",
+    "what_this_settles": "Whether the factor-~3 amplitude residue in \u00a715.2 is attributable to the leading-order inspiral template (B4) rather than to the data or the PSD."
+  },
+  "setup": {
+    "chirp_mass_Msun": 28.096,
+    "df_Hz": 0.25,
+    "distance_Mpc": 410.0,
+    "eta": 0.24710059171597634,
+    "f_isco_Hz": 67.63042224846346,
+    "f_max_fd_Hz": 1024.0,
+    "inclination_rad": 0.0,
+    "phenomxpy": "IMRPhenomT",
+    "seg_n": 65536,
+    "spins": "zero",
+    "total_mass_Msun": 65.0010276819324
+  },
+  "thresholds": {
+    "NC1_inspiral_reproduces_recorded_full_band": true,
+    "NC2_IMR_rho_opt_positive_finite": true,
+    "NC3_amplitude_linearity": true,
+    "NC4_zero_waveform_zero_rho": true,
+    "NC5_power_below_fmin_under_1pct": true,
+    "T_IMR_full_band_below_inspiral": true,
+    "T_IMR_full_band_within_25pct_of_20": false,
+    "T_amplitude_scale_IMR_closer_to_1_than_LO": true,
+    "T_inclination_sweep_monotone_decreasing": true,
+    "T_rho_opt_20_reached_within_60deg": true
+  }
+}

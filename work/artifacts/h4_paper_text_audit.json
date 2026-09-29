@@ -1,0 +1,108 @@
+{
+  "H4a": {
+    "claim": "the two BARE estimates are not independent: their ratio is the geometric factor (dV_total)^(1/3)/Rs(62)",
+    "consistent": true,
+    "falsifier": "show (dV_total)^(1/3)/Rs(62) = 1",
+    "geometric_factor": 2.0083004031215705,
+    "paper_bare_ratio": 2.0,
+    "verdict": "STANDS"
+  },
+  "H4b": {
+    "apparent_factor_dimensional_branch": 1.6666666666666667,
+    "claim": "only one precise correction factor is claimed in the text; the apparent second one is an artefact of the rounded phrase 'of order 1 millisecond'",
+    "derivation_of_1.25_in_text": false,
+    "dimensional_phrase_is_rounded": true,
+    "falsifier": "find in the text a derivation of 1.25",
+    "phrase_wording": "of order 1 millisecond delay in the end of the pulse",
+    "precise_factor_volume_branch": 1.2500000000000002,
+    "treating_phrase_as_a_factor_would_be_over_reading": true,
+    "verdict": "REVISED -- the earlier 'two different factors' framing was over-reading a rounded phrase"
+  },
+  "H4c": {
+    "claim": "the paper's 1.25 IS reproducible from its own stated geometry, as the volume-weighted mean redshift over [1.5, 4] Rs",
+    "falsifier": "show the dV-weighted mean of (1+z) over [1.5,4] Rs differs from 1.25 by more than 0.1%",
+    "matches_within_0.1pct": true,
+    "paper_factor": 1.2500000000000002,
+    "previous_claim_msg217": "1.25 obtainable only by an unjustified choice of radius r = 2.78 Rs",
+    "previous_claim_status": "REFUTED by this measurement",
+    "radius_for_factor_1.25_in_Rs": 2.7777777777777777,
+    "redshift_at_stated_R1_1.5Rs": 1.732050807568877,
+    "redshift_at_stated_R2_4Rs": 1.1547005383792517,
+    "relative_difference": 0.00027102448168445645,
+    "verdict": "REFUTED -- my own earlier criticism was wrong",
+    "volume_weighted_mean_redshift_over_stated_shell": 1.2503387806021058
+  },
+  "negative_controls": {
+    "NC1_H4a_would_flip_if_volumes_equal": {
+      "H4a_would_flip": true,
+      "resulting_factor": 0.9999999999999993,
+      "test": "replace dV_total by Rs(62)^3, giving factor exactly 1"
+    },
+    "NC2_root_excluded_subinterval": {
+      "contains_1.25": false,
+      "expected_contains_1.25": false,
+      "factor_at_1.5Rs": 1.732050807568877,
+      "factor_at_2Rs": 1.414213562373095,
+      "subinterval_Rs": [
+        1.5,
+        2.0
+      ]
+    },
+    "NC3_vw_is_shell_dependent": {
+      "differs_from_stated_shell": true,
+      "expected": "differs -- so 1.2503 is a property of the stated shell, not a universal constant, and the agreement is not vacuous",
+      "shell_Rs": [
+        1.5,
+        10.0
+      ],
+      "volume_weighted_mean": 1.0881540608631526
+    }
+  },
+  "paper_quoted": {
+    "R1_over_Rs": 1.5,
+    "R2_over_Rs": 4.0,
+    "Rs_km_stated": 180.0,
+    "masses_Msun": [
+      29.0,
+      36.0,
+      62.0
+    ],
+    "t_dim_bare_s": 0.0006,
+    "t_dim_phrase_s": 0.001,
+    "t_vol_bare_s": 0.0012,
+    "t_vol_with_redshift_s": 0.0015
+  },
+  "reproduce": {
+    "Rs62_exact_km": 183.1484796624481,
+    "Rs62_paper_rounding_pct": 1.719085884988455,
+    "Rs62_paper_stated_km": 180.0,
+    "dV_cbrt_km": 367.8171655371973,
+    "dV_total_m3": 4.97617883760151e+16,
+    "geometric_factor_cbrt_dV_over_Rs": 2.0083004031215705,
+    "paper_states_volume_ms": 1.2,
+    "t_dimensional_exact_ms": 0.6109175690552165,
+    "t_dimensional_from_stated_Rs_ms": 0.6004153713566737,
+    "t_dimensional_paper_ms": 0.6,
+    "t_volume_ms": 1.2269060002076415
+  },
+  "selfchecks": {
+    "S1_volume_reproduces_paper_1.2ms": true,
+    "S2_Rs_matches_paper_180km_within_2pct": true,
+    "S3_paper_bare_ratio_equals_geometric_factor": true,
+    "S4_volume_weighted_mean_matches_paper_1.25": true,
+    "S5_NC1_H4a_flips_when_volumes_equal": true,
+    "S6_NC2_root_correctly_excluded": true,
+    "S7_NC3_vw_shell_dependent": true
+  },
+  "thresholds": {
+    "S1_volume_reproduces_paper_1.2ms": true,
+    "S2_Rs_matches_paper_180km_within_2pct": true,
+    "S3_paper_bare_ratio_equals_geometric_factor": true,
+    "S4_volume_weighted_mean_matches_paper_1.25": true,
+    "S5_NC1_H4a_flips_when_volumes_equal": true,
+    "S6_NC2_root_correctly_excluded": true,
+    "S7_NC3_vw_shell_dependent": true,
+    "T_H4a_factor_about_2": true,
+    "T_H4c_agreement_within_0.1pct": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "conclusion": "The paper's 1.25 is reproduced by the FULL-PROPER-VOLUME weighting (1.25034) but NOT by the CREATED-volume weighting (1.28596) that h4_paper_text_audit.py's own docstring names as the justification, nor by the flat-volume weighting (1.24173). The agreement with the paper's text is therefore a property of one particular (natural but unstated) choice of weight. Claim weakened: '1.25 is reproducible by a natural weighting', not '1.25 is derived'.",
+  "negative_controls": {
+    "NC1_weights_disagree": true,
+    "NC2_means_exceed_1": true,
+    "NC3_flat_weight_is_smallest": true
+  },
+  "paper_factor": 1.2500000000000002,
+  "spread": {
+    "max_minus_min": 0.04422732204869617,
+    "relative_to_paper": 0.03538185763895693
+  },
+  "thresholds": {
+    "NC1_weights_disagree": true,
+    "NC2_means_exceed_1": true,
+    "NC3_flat_weight_is_smallest": true,
+    "T_W1_matches_paper_within_0.1pct": true,
+    "T_W2_does_not_match_paper": true
+  },
+  "weights": {
+    "W1_full_proper_volume": {
+      "mean_redshift": 1.2503387806021058,
+      "rel_diff_from_paper": 0.00027102448168445645
+    },
+    "W2_created_volume": {
+      "mean_redshift": 1.2859563125961027,
+      "rel_diff_from_paper": 0.028765050076881942
+    },
+    "W3_flat_volume": {
+      "mean_redshift": 1.2417289905474065,
+      "rel_diff_from_paper": 0.006616807562074988
+    }
+  }
+}
